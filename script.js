@@ -30,4 +30,9 @@
   buttons.forEach((button) => {
     button.addEventListener("click", changeColor);
   });
+
+  img.addEventListener("dblclick", () => {
+    stopInterval();
+    img.src = "img/desligado.png";
+  });
 })();
